@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Porcicultura - Crianza de Cerdos, Calculadora de Parto y Blog</title>
+        <meta name="description" content="Aprende sobre la crianza de cerdos, calcula la fecha de parto de tus cerdas y lee consejos en nuestro blog de porcicultura.">
+        <meta name="keywords" content="porcicultura, crianza de cerdos, calculadora de parto, blog de cerdos, inseminación de cerdas">
+        <meta name="author" content="Tu Nombre o Nombre de la Empresa">
+        <!-- Open Graph para redes sociales -->
+        <meta property="og:title" content="Porcicultura - Crianza de Cerdos y Calculadora de Parto">
+        <meta property="og:description" content="Todo sobre porcicultura: consejos, calculadora de fecha de parto y blog especializado.">
+        <meta property="og:image" content="https://images.unsplash.com/photo-1564085352725-08da0272627d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200&q=80">
+        <meta property="og:url" content="http://tu-dominio.com">
+        <meta property="og:type" content="website">
+        <link rel="stylesheet" href="styles.css">
+      </head>
+<body>
+  <!-- Barra de navegación -->
+  <nav>
+    <div class="logo">Porcicultura</div>
+    <ul>
+      <li><a href="#" onclick="showPage('home')">Inicio</a></li>
+      <li><a href="#" onclick="showPage('calculator')">Calculadora</a></li>
+      <li><a href="#" onclick="showPage('blog')">Blog</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenido de las páginas -->
+  <main>
+    <!-- Página de Inicio -->
+    <section id="home" class="page active">
+        <h1>Bienvenidos a Porcicultura - Crianza de Cerdos</h1>
+        <p>Todo lo que necesitas saber sobre la <strong>crianza de cerdos</strong>: consejos prácticos, una <strong>calculadora de fecha de parto</strong> para cerdas y un <strong>blog de porcicultura</strong> con información actualizada.</p>
+        <h2>¿Por qué elegirnos?</h2>
+        <p>Ofrecemos herramientas gratuitas y consejos prácticos para criadores de cerdos, desde cómo calcular la fecha de parto hasta cómo mejorar la alimentación de tus animales.</p>
+        <img src="https://images.unsplash.com/photo-1564085352725-08da0272627d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200&q=80" alt="Cerdos en una granja de porcicultura" loading="lazy">
+      </section>
+
+    <!-- Página de Calculadora -->
+    <section id="calculator" class="page">
+      <h1>Calculadora de Fecha de Parto</h1>
+      <div class="calculator-form">
+        <label>Fecha de inseminación:</label>
+        <input type="date" id="inseminationDate">
+        <button onclick="calculateDueDate()">Calcular</button>
+      </div>
+      <p id="result"></p>
+    </section>
+
+    <!-- Página de Blog -->
+    <section id="blog" class="page">
+      <h1>Blog de Porcicultura</h1>
+      <form id="blogForm">
+        <input type="text" id="title" placeholder="Título" required>
+        <textarea id="content" placeholder="Contenido" required></textarea>
+        <button type="submit">Agregar Entrada</button>
+      </form>
+      <div id="posts"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <li><a href="#" onclick="showPage('home')" aria-label="Ir a la página de inicio">Inicio</a></li>
+  <p>Prueba nuestra <a href="#" onclick="showPage('calculator')">calculadora de fecha de parto</a> o lee los últimos consejos en nuestro <a href="#" onclick="showPage('blog')">blog de porcicultura</a>.</p>
+  <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=TU-ID-DE-ANALYTICS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'TU-ID-DE-ANALYTICS');
+</script>
+</body>
+</html>
